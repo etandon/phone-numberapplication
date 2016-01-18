@@ -1,0 +1,353 @@
+/* CSS Document */
+a:active, a:link{color:#0362AA;}
+a:visited{color:#69789C;}
+#content a:hover{	color:#d97600;}
+
+a img{
+	border:none; /* we don't want to use the HTML code border="0", so here's the CSS method */
+}
+
+table{
+  font-size:1em;
+}
+
+/*--[ Top Navigation * ]--------------------*/
+#contentWrapper {
+    /* Keeps menu and content within application template bounds */
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.clear{padding:0; margin:0; border:0; clear:both;height:0px;}
+.clearFeature{clear:right;height:0px;}
+
+.alignRight{float:right;position:relative;}
+.alignLeft{float:left;position:relative;}
+.alignRightObj{float:right;margin-left:10px;margin-right:0px;}
+.alignLeftObj{float:left;margin-right:10px;margin-left:0px;}
+.alignRightObj,.alignLeftObj{margin-top:10px;margin-bottom:10px;}
+.alignRightBox{float:right;margin-right:0px;margin-left:10px;}
+.alignLeftBox{float:left;margin-right:10px;margin-left:0;}
+.alignRightBox,.alignLeftBox{margin-top:10px;margin-bottom:10px;}
+
+
+/*--[ Left Navigation ]--------------------*/
+#nav { font-size:11px; width: 290px;} /* CHANGED FOR 2 COLUMN FOOTER FIX - width change 20px more */
+#nav a {text-decoration:none; color:#006; display: block; }
+#nav a.on, #nav a:hover {color:#D97600; }
+#nav ul {margin: 0px 0px 0px 12px; padding: 0px;} /* CHANGED FOR 2 COLUMN FOOTER FIX - added 7px for margin-left */
+#nav ul ul {margin: 0px 0px 0px 0px; }
+#nav li {list-style-type:none;list-style-image:none; line-height:14px;}
+#nav ul li  {
+margin: 0px 0px 1px 0px;
+font-weight:bold;
+}
+#nav ul a.row{
+width: 128px;
+padding:0px 0px 2px 2px;
+border-bottom: 1px solid #297AB7; }
+
+#nav ul ul li  {
+margin: 0px;
+padding: 0px 0px 1px 9px;
+font-weight: normal;
+background: url(../images/leftnav/nav_arrow3x5.gif) no-repeat 4px 5px;}
+
+#nav ul ul li.on  {
+margin: 0px;
+padding: 0px 0px 1px 9px;
+font-weight: normal;
+background: url(../images/leftnav/nav_arrow3x5_on.gif) no-repeat 4px 5px;}
+
+#nav ul ul a {
+width: 119px;
+padding:0px 0px 3px 2px;
+background: url(../images/leftnav/nav_divider_dotted.gif) no-repeat bottom right; }
+
+#nav ul ul a.last {
+margin-left: -9px;
+margin-bottom: 1px;
+padding-left: 11px;
+border-bottom :1px solid #297AB7; 
+background: none; }
+
+#nav { padding:5px 0 0 0; vertical-align: top; margin: 0px; height: 100%;}/* end Leftnav Classes ---- /* CHANGED FOR 2 COLUMN FOOTER FIX - Took out background color */
+
+/*--[ Bottom Navigation ]--------------------*/
+
+.botNav{font-size:.9em;font-weight:bold;padding:2px 0 0 10px;border-top:1px solid #000;margin-top:25px;}
+.botNav a, .botNav a:visited{display:table-cell;padding-right:16px;font-weight:normal;text-decoration:none;}
+
+/*--[ Form Classes ]--------------------*/
+
+table.formTable{border-spacing:0px;border-right:0px;border-bottom:0px;}
+
+table.formTable thead td{background-color:#ccc;font-weight:bold;}
+table.formTable thead.theadSub td{background-color:#eaeaea;font-weight:bold;}
+
+table.formTable td{color:#000;font-weight:normal;padding:2px 0px 2px 0px;border-top:0px;border-left:0px;margin:0px;}
+table.formTable td.formLabel{width:9em; color:#000; background:#DBE8F8; text-align:left; border-top:2px solid #fff; border-bottom:2px solid #fff; padding-right:2px;padding-left:2px;}
+table.formTable td.column2{border-left:20px solid #fff;}
+table.formTable td.formField{padding:0 4px 0 4px;border-top:1px solid #fff;border-bottom:1px solid #fff;}
+table.formTable td.formField .example{color:#666;font-size:.85em;}
+table.formTable td.formFieldSm{padding:0 4px 0 4px;border-top:1px solid #fff;border-bottom:1px solid #fff;}
+div.buttonRow{margin:16px 0px 16px 120px;}
+.buttonFormMain{color:#000;background:#eaeaea;display:table-cell;padding:1px 0px 1px 0px;margin-right:5px;width:220px;}
+.hdrCol{padding-top:3px;}
+.required {color:red;}
+
+/*--[ Content Classes ]--------------------*/
+
+#content table{
+	font-size: 1em;
+}
+h1{
+	color:#D97600;font-size: 1.8em;margin:.5em 0 .5em 0; font-weight:normal;
+}
+
+#content h2{
+	color:#092D5B;
+	font-size: 1.3em; font-weight:bold;
+	margin:0 0 .35em 0; padding:.5em 0 0 0;
+}
+
+#content h3{color:#000;font-size: 1.25em; margin:0px 0 .25em 0; font-weight:bold;}
+
+#content h4{color:#000;font-size: 1em; margin:0px 0 .25em 0; font-weight:bold;}
+
+#content p{margin-top:0em;}
+#content ul{}
+dt {font-weight:bold; }
+
+
+/*--[ Dividers ]--------------------*/
+
+.contentDiv{margin-top:1em;border-top:1px solid #ccc;width: 100%;}
+
+/*--[ Other Boxes ]--*/
+.imageBox{background-color:#f8f8f8;border:solid 1px #999;display:inline-table;}
+.imageBox .image{padding:5px;}
+.imageBox .caption{color:#666;font-family:Verdana;padding:0 5px 5px 5px;font-size:.9em;}
+
+/*--[ Data Tables ]--*/
+tr.altRow{background:#f8f6e6;}
+table.table1,table.table2{border-spacing:0px;border:1px solid #e3dec2; border-right:0px;border-bottom:0px;overflow:scroll}
+table.table1 td,table.table2 td{padding:2px 3px 2px 3px;border:1px solid #e3dec2; border-top:0px;border-left:0px;margin:0px;}
+table.table1 thead td,table.table2 thead td{padding:2px 3px 2px 3px;font-weight:bold;}
+table.table1 tr:nth-child(even) td{background:#f8f6e6;}
+
+table.table1 thead td{background-color:#e3dec2;color:#000;}
+table.table1 col.hdrCol{background-color:#fffaed;color:#000;}
+table.table2 thead td{background-color:#000066;color:#fff;}
+table.table2 col.hdrCol{background-color:#dbe8f8;color:#000;}
+table thead.theadSub td{background-color:#eaeaea;font-weight:bold;}
+
+table.left{float:left;margin-right:10px;}
+table.right{float:right;margin-left:10px;}
+table.top{margin-bottom:10px;}
+table.bottom{margin-top:10px;}
+table.center{margin-top:10px;margin-bottom:10px;}
+
+table.table1 td.indent,table.table2 td.indent{padding-left:25px;border-top:0px;}
+
+
+/*
+SCREEN-SPECIFIC STYLES
+------------------------*/
+@media screen {
+
+}
+
+
+/*
+PRINT-SPECIFIC STYLES
+------------------------*/
+@media print {
+
+}
+
+
+/* -- NAVIGATION ELEMENTS: general tabbed navigation styles -- */
+.tabnav {
+	background: #fff;
+	border-bottom: solid 2px #0462AA;
+}
+	
+ul.level1 {
+	margin: 0;
+	padding: 0;
+	width: 750px;
+}
+		
+ul.level1 li {
+	float: left;
+	padding-right: 4px;
+	list-style-type: none;
+}
+		
+ul.level1 li a {
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 4px 12px 4px 12px;
+	color: #fff;
+	font-size: 0.9em;
+	font-weight: bold;
+	background: #999;
+	text-decoration: none;
+}
+		
+ul.level1 a:hover {
+	color: #fc0 !important;
+}
+		
+ul.level1 a:visited {
+	color: #fff;
+}
+		
+ul.level1 .selected a {
+	color: #fc0; 
+	text-decoration: none;
+	background-color: #0462aa;
+}
+
+ul.level1 .selected a:visited {
+	color: #fc0;
+}
+
+ul.level1 li.tabsection {
+    margin-right: 15px;
+}
+
+/* -- TEMPLATE ELEMENTS: usability central template styles -- */
+
+.accinfo {
+	padding-left: 8px;
+	border: 1px solid #E5E5E5;
+	background-color: #F3F3F3;
+}
+
+.accinfo td {
+	padding-bottom: 3px;
+	padding-top: 1px;
+}
+
+table.newspaper tbody td { 	font-size: 11px; }
+
+.newspaper ul, .portlet ul { 
+	list-style-type: square; 
+	padding: 5px 0 8px 8px;
+	margin: 0 0 0 10px;
+}
+
+.newspaper ul li, .portlet ul li {
+	padding: 0 0;
+}
+
+.smallTxt {
+	font-size: 0.9em;
+}
+
+p.headline {
+margin-bottom: 1px; padding-bottom: 0px;
+}
+table.table1 table.plain, table.table1 table.plain td  { border: 0px; background: none; padding:0px; margin: 0px;}
+table.table1 table.plain thead td.shaded{background-color:#e3dec2; padding:2px 2px; border-left:3px solid white; }
+
+table.calendar thead td{padding:0 3px 2px 3px; font-weight:bold; background: #e5e5e5; color:#000;}
+table.calendar td{padding:1px 4px 1px 4px; border:0px; border-top:0px;border-left:0px;margin:2px;}
+table.calendar .event { display: block; padding: 2px; border: solid 1px #dbe8f8; background: #fffaed;}
+table.calendar .select { display: block; padding: 2px; border: solid 1px #d97600;}
+
+.verticle { vertical-align: middle; }
+
+#content h2.homepage a, #content h2.homepage a:visited {text-decoration: none;color: #072D5A; }
+#content h2.homepage a:hover {color: #D97600; }
+
+tr.altRow2{background:#f7f7f7;}
+
+.good { color: green; }
+
+.spacer {
+	border-bottom: solid 6px #fff;
+}
+
+.active td{
+    background:grey!important
+    }
+
+#email_module { margin: 0 0 8px 0; padding: 0 4px 8px 12px; border-bottom: solid 1px #FFF; } /* CHANGED FOR 2 COLUMN FOOTER FIX */
+#email_module a { font-weight: bold; display: inline; }
+
+ul.step { margin: 0; padding: 15px 0 0 0; left: 4px; }
+ul.step li.select { padding: 4px; background: #fff; border: solid 1px #E3DEC2; border-right: none; }
+ul.step li { margin-left: 10px; padding: 5px 0 5px 5px; list-style-type: none; }
+td.altCol{background:#f8f6e6;}
+
+.login { margin-left: 10px; padding: 11px 8px 11px 8px; width: 146px; float: right; background: #E3DEC2; }
+.login .btnAlign { float: right; }
+
+
+/*Added for pagination*/
+
+div.digg_pagination {
+  background: white;
+  cursor: default;
+  /* self-clearing method: */ }
+div.digg_pagination a, div.digg_pagination span, div.digg_pagination em {
+    padding: 0.2em 0.5em;
+    display: block;
+    float: left;
+    margin-right: 1px; }
+div.digg_pagination ul, div.digg_pagination li{
+    display: inline;
+    list-style: none;}
+div.digg_pagination div.disabled {
+    color: #999999;
+    border: 1px solid #dddddd; }
+div.digg_pagination div.current {
+    font-style: normal;
+    font-weight: bold;
+    background: #2e6ab1;
+    color: white;
+    border: 1px solid #2e6ab1; }
+div.digg_pagination a {
+    text-decoration: none;
+    color: #105cb6;
+    border: 1px solid #9aafe5; }
+div.digg_pagination a:hover, div.digg_pagination a:focus {
+      color: #000033;
+      border-color: #000033; }
+div.digg_pagination div.page_info {
+    background: #2e6ab1;
+    color: white;
+    padding: 0.4em 0.6em;
+    width: 22em;
+    margin-bottom: 0.3em;
+    text-align: center; }
+div.digg_pagination div.page_info b {
+      color: #000033;
+      background: #6aa6ed;
+      padding: 0.1em 0.25em; }
+div.digg_pagination:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+* html .digg_pagination {
+    height: 1%; }
+*:first-child + html .digg_pagination {
+    overflow: hidden; }
+    
+    
+#inputCheck {
+	left: 10px;
+	visibility:visible;
+	
+}    
+#labelCheck{
+	color: black;
+	
+	
+}

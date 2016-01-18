@@ -1,0 +1,201 @@
+html, body{
+  height:100%;
+}
+
+#externalApplicationTemplate{
+    height:100%;
+}
+
+/*--[ Footer Stick ]--------------------*/
+#page { position: relative; min-height: 100%; }
+* html #page { height: 100%; }
+
+/* 
+prevents IE disappearing list background bug 
+http://www.positioniseverything.net/explorer/ie-listbug.html 
+*/
+ul, ol, dl {position: relative;} 
+
+form {margin:0px;}
+a img{border:none; /* we don't want to use the HTML code border="0", so here's the CSS method */}
+
+/*--[ Body ]--------------------*/
+
+body {font-size:75%;font-family:Arial,Helvetica,sans-serif;height:100%;padding:0px 0px 0px 0px;margin:0 0 0 0; background:none; text-align:left;  /* alignment of body */}
+#body {height:100%;width:100%;text-align:left;}
+#bodyInt {height:100%;border-left:0px solid #999; border-right:0px solid #999; padding:0px 0px 0px 0px; margin:0 0 0 0;}
+	
+#pageBody{font-size:1em;width:100%;height:81%;}
+
+/*--[ Content ]---------------*/
+    
+#content{width:100%;}
+#content #contentInt{background:#fff;padding:3px 6px 70px 6px; vertical-align: top;}
+#content #contentInt1{background:#fff;padding:3px 6px 70px 6px; vertical-align: top;}
+#content #contentInt2{background:#fff;padding:3px 6px 70px 6px; vertical-align: top;}
+#content #contentInt3{background:#fff;padding:3px 6px 70px 6px; vertical-align: top;}
+#content #contentInt4{background:#fff;padding:3px 6px 70px 6px; vertical-align: top;}
+#content #contentInt5{background:#fff;padding:3px 6px 70px 6px; vertical-align: top;}
+#content #contentInt6{background:#fff;padding:3px 6px 70px 6px; vertical-align: top;}
+#content #contentInt7{background:#fff;padding:3px 6px 70px 6px; vertical-align: top;}
+#content #contentInt8{background:#fff;padding:3px 6px 70px 6px; vertical-align: top;}
+#content #contentInt9{background:#fff;padding:3px 6px 70px 6px; vertical-align: top;}
+#content #contentInt10{background:#fff;padding:3px 6px 70px 6px; vertical-align: top;}
+#content #contentInt11{background:#fff;padding:3px 6px 70px 6px; vertical-align: top;}
+#content #contentInt12{background:#fff;padding:3px 6px 70px 6px; vertical-align: top;}
+#content #contentInt13{background:#fff;padding:3px 6px 70px 6px; vertical-align: top;}
+#content #contentInt14{background:#fff;padding:3px 6px 70px 6px; vertical-align: top;}
+#content #contentInt15{background:#fff;padding:3px 6px 70px 6px; vertical-align: top;}
+#content #contentInt16{background:#fff;padding:3px 6px 70px 6px; vertical-align: top;}
+#content #contentPadding {padding:0px 10px 0px 10px; } /* for pages where content should be less than full width */
+#footer a:hover{
+  color:#d97600;
+}
+
+
+.hiddenLink{visibility:hidden;position:absolute;z-index:-99;}
+
+/*--[ Top Navigation ]--------------------*/
+
+#header { background: #fff; padding:0; border: solid 5px #fff; }
+#globalTopNav {padding:0; margin:0; width:100%;background:#000;border: 0px; height: 1.8em;}
+#globalTopNavInt {margin:0.2em 0 0.2em 0; padding:0; width:45em;display: inline; }
+#globalSearch { margin:0; padding:0; width:30em;display: inline;  }
+#globalTopNavInt a, #globalTopNavInt a:visited{color:#fff; font-weight:normal;text-decoration:none;padding: 0 2px; margin: 0;}
+#globalTopNavInt ul {margin:0; padding:0 0 0 0.4em;}
+#globalTopNavInt ul li {float:left;display:block;position:relative;padding:0.3em 0 0.3em 0.5em;margin:0;color:#fff;font-size:0.9em;  }
+#globalTopSearch {
+	display: inline; float: right; position:relative;
+	font-weight: normal; text-align: right; vertical-align: middle;
+	margin: 0.2em 0 0.2em 0; padding: 0; font-size:1em; 	
+}		
+#globalAdvSearch { 
+	display: inline; float: right; position:relative;
+	line-height:0.8em;font-size:0.8em;	
+	margin: 0.2em 1em 0.1em 0.7em;	width:6em;
+	padding:0;  font-weight:normal; 
+}
+#globalAdvSearch a, #globalAdvSearch a:visited{
+	color:#CCC; text-decoration:none; 
+}
+#globalTopSearch input.QueryText{ 
+	font-size:1em;	width:14em; height: 1.2em;
+	border: 1px solid #999999;
+	padding: 0px; margin: 0 0.5em;
+}
+#globalTopSearch input.SubmitButton{
+	color:#E7EDEF; 	background-color:#0072AB; 
+	border-top:1px solid #6CAECF; border-left:1px solid #6CAECF; 
+	border-bottom:1px solid #194563; border-right:1px solid #194563;
+	font-size:0.9em; padding: 0 0.2em; 
+	font-weight: bold; vertical-align: top;
+}
+
+#brandSpace {clear:left;float:left;background: #00368E;position:relative; width:100%;margin:6px 0px 5px 0px;padding:0px;}
+#brandSpaceInt {width: 750px; height:83px; margin: 0; padding: 0;}
+    #brandSpace .logoFreddieMac {float:left;background:#fff;width:140px; padding-right:6px;}
+        #brandSpace .logoFreddieMacInt {}
+    #brandSpace .applicationLogo {float:left;color:#fff;font-size:2.05em;padding:20px 15px 0 26px; background: url('../images/nav/header/generic_app_hdr_bg.gif') top left repeat; height:63px;}  /* height = 83-20 for firefox */
+    #brandSpace .siteDescription {float:left;color:#fff;font-size:.51em;}
+        
+
+#globalTopNavInt a:hover,
+#globalAdvSearch a:hover {
+    color:#d97600;  
+}
+
+
+/*--[ Navigation Header ]--------------------*/
+
+#navigationHeaderDiv {clear:left;height:1px;background:#fff;}
+#navigationHeaderFooter {background:#000;height:4px;border-top:0px solid #fff;border-bottom:3px solid #fff;}
+
+
+/*--[ Footer ]--------------------*/
+
+/* Use when left navigation is in use */
+
+#nonFooter {
+	background: #fff;
+	min-height: 100%;
+	position: relative;
+}
+
+#footerWrapper {
+	padding-left: 160px;
+	padding-right: 6px;
+}
+
+#footerWrapper #footer {
+	float: left;
+	margin: -53px 0 0 0;
+	padding: 12px 0 20px 0;
+	position: relative;
+	clear: both;
+	color: #666; 
+	width: 100%;
+	background: url('../images/nav/footer/hf_div_footer.gif') repeat-x top left;
+}
+
+* html #nonFooter {
+	height: 100%
+}
+
+* html #footer {
+	margin-top: -53px;
+	clear: both;
+}
+
+/* Use when there is NO left navigation */
+
+#footer {
+  position: absolute; 
+  bottom: 0; 
+  width: 100%; 
+  margin-top: 14px;
+  font-weight: normal;
+}
+
+#footerBorder {
+  margin: 0 6px 0 6px;
+  padding: 12px 0 20px 0; 
+  color: #666; 
+  background: url('../images/nav/footer/hf_div_footer.gif') repeat-x top left;
+}
+
+#footer a{
+  color:#0561AA;
+  display:table-cell;
+  font-weight:normal; text-decoration:underline;
+}
+#footer .lastmod{
+  float:right;
+}
+
+#footer a:hover{
+  color:#d97600;
+}
+
+.animate-hide {
+ -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s;
+    -moz-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s;
+    -o-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s;
+    transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s;
+  line-height:20px;
+  opacity:1;
+  padding:10px;
+  border:1px solid black;
+  background:white;
+  left: 0;
+}
+
+.animate-hide.ng-hide {
+  line-height:0;
+  opacity:0;
+  padding:0 10px;
+  left: -100%;
+}
+
+
+
+
