@@ -14,4 +14,14 @@
     <servlet-name>AppPage</servlet-name>
     <url-pattern>/app</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description>This is the Data Servelet of the Application</description>
+    <display-name>DataFetch</display-name>
+    <servlet-name>DataFetch</servlet-name>
+    <servlet-class>com.etandon.phonenumber.servelets.DataFetch</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DataFetch</servlet-name>
+    <url-pattern>/datafetch</url-pattern>
+  </servlet-mapping>
 </web-app>

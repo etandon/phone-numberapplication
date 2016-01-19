@@ -79,11 +79,18 @@ public class Corelogic {
 		  StringBuilder outputBuilder = new StringBuilder(input);
 		  while(carry)
 		       {
-			    char currentChar=input.charAt(length-1-index);
-			    ArrayList<Object> nextCharFlag=findNextChar(currentChar);
-			    outputBuilder.setCharAt(length-1-index,(char) nextCharFlag.get(0));
-			    carry=(boolean) nextCharFlag.get(1);
-			    index++;
+			    if(length!=index)
+			      {	
+			       char currentChar=input.charAt(length-1-index);
+			       ArrayList<Object> nextCharFlag=findNextChar(currentChar);
+			       outputBuilder.setCharAt(length-1-index,(char) nextCharFlag.get(0));
+			       carry=(boolean) nextCharFlag.get(1);
+			       index++;
+			      } 
+			    else
+			      {
+			    	return null;
+			      }
 		       }
 		  return outputBuilder.toString(); 
  		
