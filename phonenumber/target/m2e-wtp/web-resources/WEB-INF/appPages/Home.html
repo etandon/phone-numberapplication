@@ -156,8 +156,27 @@
 						}
 						}
 					};
+					$scope.prevPage=function(){
+						if(($scope.offset-$scope.loadsPerPage)>=0){
+							$scope.offset=$scope.offset-$scope.loadsPerPage;
+							$http.get("datafetch?command=getPreviousList&input="+$scope.listAlphaNumeric[0]).success( function(response1) {
+							       $scope.listAlphaNumeric=response1;
+						          });
+							}
+					};
 					$scope.firstPage=function(){
 						$scope.validatePhoneNumber();	
+					};
+					$scope.lastPage=function(){
+						if($scope.listAlphaNumeric != undefined){
+						var remainder=($scope.totalNumbers)%($scope.loadsPerPage);
+						if(remainder==0)
+						  {remainder=25;}
+						$scope.offset=($scope.totalNumbers)-(remainder);
+						$http.get("datafetch?command=getLastList&input="+$scope.listAlphaNumeric[0]+"&remainder="+remainder).success( function(response1) {
+						       $scope.listAlphaNumeric=response1;
+					          });
+						}
 					};
 			 
 		}]);

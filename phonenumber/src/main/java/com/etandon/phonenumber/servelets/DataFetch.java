@@ -3,6 +3,7 @@ package com.etandon.phonenumber.servelets;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import javax.servlet.ServletException;
@@ -85,6 +86,48 @@ public class DataFetch extends HttpServlet {
 				 if(previous!=null)
 				 {resultList.add(previous);}
 			   }
+			String json=new Gson().toJson(resultList);
+			response.setContentType("application/json; charset=UTF-8");
+			PrintWriter out=response.getWriter();
+			out.print(json);
+			out.flush();
+			return;
+		  }
+		else if("getPreviousList".equals(command))
+		  {
+			List<String> resultList=new ArrayList<String>();
+			String previous=input;
+			Corelogic instance=new Corelogic();
+			for(int i=0;i<25;i++)
+			   {
+				 if(previous!=null)
+				 {previous=instance.findPreviousWord(previous);}
+				 if(previous!=null)
+				 {resultList.add(previous);}
+			   }
+			Collections.reverse(resultList);
+			String json=new Gson().toJson(resultList);
+			response.setContentType("application/json; charset=UTF-8");
+			PrintWriter out=response.getWriter();
+			out.print(json);
+			out.flush();
+			return;
+		  }
+		else if("getLastList".equals(command))
+		  {
+			List<String> resultList=new ArrayList<String>();
+			int remainder=Integer.parseInt(request.getParameter("remainder"));
+			Corelogic instance=new Corelogic();
+			String lastWord=instance.findLastWord(input);
+			resultList.add(lastWord);
+			for(int i=1;i<remainder;i++)
+			   {
+				 if(lastWord!=null)
+				 {lastWord=instance.findPreviousWord(lastWord);}
+				 if(lastWord!=null)
+				 {resultList.add(lastWord);}
+			   }
+			Collections.reverse(resultList);
 			String json=new Gson().toJson(resultList);
 			response.setContentType("application/json; charset=UTF-8");
 			PrintWriter out=response.getWriter();
